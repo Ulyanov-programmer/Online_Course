@@ -1,0 +1,171 @@
+.sidebar {
+	position relative;
+	z-index 10;
+	position sticky;
+	top 10px;
+	height max-content;
+	background #fff;
+	transition all .5s ease;
+
+	&.active {
+		transform translate3d(0, 0, 0);
+	}
+
+	@media (max-width 1000px) {
+		position fixed;
+		top 0;
+		right 0;
+		height 100%;
+		overflow auto;
+
+		&__body {
+			height max-content;
+		}
+
+		transform translate3d(100%, 0, 0);
+	}
+
+	&__body {
+		flex-set column nowrap;
+		firstLevelElementsMargin 'bottom' 10;
+		padding 20px 15px 10px 10px;
+		overflow auto;
+
+		@media (min-width 1000px) {
+			height 90vh;
+		}
+	}
+
+	&__block {
+		padding 40px 0;
+		firstLevelElementsMargin 'bottom' 25;
+
+		@media (max-width 1300px) {
+			padding 20px 0;
+		}
+	}
+
+	&__block-title {
+		display block;
+		font-size 16px;
+		font-weight 700;
+		text-transform uppercase;
+		color #1E212C;
+	}
+
+	&__tags {
+		flex-set row wrap;
+		firstLevelElementsMargin 'right' 10;
+		margin-top 15px;
+		firstLevelElementsMargin 'bottom' 10;
+	}
+}
+
+.author-of-post {
+	display grid;
+	grid-template 'img name' auto 'img post' auto 'img socials' auto / 100px 1fr;
+	gap 10px 20px;
+
+	@media (max-width 1300px) {
+		grid-template-columns 70px 1fr;
+	}
+
+	&__photo {
+		grid-area img;
+		align-self start;
+
+		img {
+			border-radius 4px;
+		}
+	}
+
+	&__name {
+		grid-area name;
+	}
+
+	&__post {
+		grid-area post;
+		color #787A80;
+		font-size 14px;
+	}
+
+	&__socials {
+		padding-top 10px;
+		grid-area socials;
+	}
+
+	&__social {
+		padding 0 3px;
+
+		path {
+			transition all .3s ease;
+		}
+
+		&:hover, &:focus {
+			path {
+				fill #FF3F3A;
+			}
+		}
+	}
+}
+
+.article {
+	&__body {
+		display grid;
+		grid-template 'img date' auto 'img title' auto / 100px 1fr;
+		gap 10px 20px;
+		justify-items start;
+
+		@media (max-width 1300px) {
+			grid-template-columns 70px 1fr;
+		}
+
+		&:hover, &:focus {
+			.article__title {
+				color #FF3F3A;
+			}
+		}
+	}
+
+	&__preview {
+		grid-area img;
+		align-self start;
+	}
+
+	&__date {
+		color #787A80;
+		grid-area date;
+		line-height 1 !important;
+	}
+
+	&__title {
+		grid-area title;
+
+		@media (max-width 1300px) {
+			font-size 16px !important;
+		}
+	}
+}
+
+.sidebar-swipe-wrapper {
+	z-index 9;
+	position fixed;
+	top 0;
+	right 0;
+	width 5vw;
+	height 100vh;
+	cursor grab;
+	user-select none;
+
+	&:active {
+		cursor grabbing;
+	}
+
+	@media (max-width 426px) {
+		width 10vw;
+	}
+
+	&.active {
+		width 100vw;
+	}
+}

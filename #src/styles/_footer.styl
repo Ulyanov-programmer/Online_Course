@@ -1,0 +1,160 @@
+.footer {
+	background #1E212C;
+	color #fff;
+
+	&__body {
+	}
+
+	&__top {
+		flex-set row wrap;
+		firstLevelElementsMargin 'right' 80;
+
+		@media (max-width 1440px) {
+			firstLevelElementsMargin 'right' 40;
+		}
+
+		@media (max-width 500px) {
+			firstLevelElementsMargin 'right' 20;
+		}
+
+		padding 80px 0 60px 0;
+
+		@media (max-width 768px) {
+			padding 20px 0;
+		}
+	}
+
+	&__about {
+		firstLevelElementsMargin 'bottom' 30;
+	}
+
+	&__column {
+		flex 1 1 15%;
+		padding-bottom 80px;
+
+		@media (max-width 768px) {
+			padding-bottom 20px;
+		}
+	}
+
+	&__text {
+		line-height 1.5;
+		opacity .6;
+	}
+
+	&__socials {
+	}
+
+	&__list {
+	}
+
+	&__title {
+		display inline-block;
+		text-transform uppercase;
+		padding-bottom 15px;
+	}
+
+	&__li {
+		a {
+			color #fff;
+			opacity .6;
+			padding 8px 0;
+			transition all .3s ease;
+
+			&:hover, &:focus {
+				opacity 1;
+			}
+		}
+	}
+
+	&__subscribe {
+	}
+
+	&__form {
+		flex-set row nowrap;
+		align-items center;
+		justify-content space-between;
+		background rgba(255, 255, 255, .204);
+		border 1px solid rgba(255, 255, 255, .304);
+		border-radius 4px;
+		margin-bottom 10px;
+
+		@media (min-width 426px) {
+			max-width 250px;
+		}
+
+		button {
+			position: relative;
+			z-index 30;
+			display flex;
+			padding 9px 12px;
+
+			svg {
+				transform-origin center center;
+				transition all .3s ease;
+			}
+
+			&:hover, &:focus {
+				svg {
+					transform rotate(-45deg);
+				}
+			}
+		}
+	}
+
+	&__input {
+		color rgba(255, 255, 255, .6);
+		background rgba(255, 255, 255, 0);
+		padding 9px 12px;
+		font-size 12px;
+
+		&::placeholder {
+		}
+	}
+
+	&__notify {
+		font-size 12px;
+		line-height 1.5;
+	}
+
+	&__bottom {
+		padding 20px 0;
+		firstLevelElementsMargin 'right' 10;
+		background rgba(255, 255, 255, .05);
+
+		&-content {
+			display flex;
+			justify-content space-between;
+		}
+	}
+
+	&__bottom-left {
+		img {
+			margin 0 5px;
+		}
+	}
+
+	&__bottom-right {
+	}
+}
+
+.to-top-btn {
+	font-weight 700;
+	color rgba(255, 255, 255, .794);
+}
+
+.tel {
+	&:before {
+		display inline-block;
+		content url('../img/decor/telephone.svg');
+		margin-right 10px;
+	}
+}
+
+.mail {
+	&:before {
+		display inline-block;
+		content url('../img/decor/mail.svg');
+		margin-right 5px;
+	}
+}

@@ -1,0 +1,36 @@
+.searchbar {
+	flex-set row nowrap;
+	background #fff;
+	border 1px solid #D7DADD;
+	border-radius 4px;
+	gap 0px
+
+	&__input {
+		border-radius 4px;
+		color #9A9CA5;
+		padding 10px 15px;
+		padding-right 0;
+		min-width 100px;
+		flex 1 1 auto;
+		transition all .2s ease;
+
+		&:hover, &:focus {
+			color inherit;
+		}
+	}
+
+	&__submit {
+		padding 10px 15px;
+		transition all .3s ease;
+
+		path {
+			transition all .2s ease;
+		}
+
+		&:hover, &:focus {
+			path {
+				fill #6b6b6b;
+			}
+		}
+	}
+}

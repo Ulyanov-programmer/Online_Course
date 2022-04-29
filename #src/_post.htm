@@ -1,0 +1,22 @@
+<article class="post @@addClasses">
+	<div class="post__body">
+		<div class="post__preview">
+			<a href='#' target='_blank' aria-label="ref to post @@title" rel='noopener noreferrer'>
+				<img src="img/posts/@@img.jpg" loading='lazy' alt='@@title' width=390 height=300>
+			</a>
+			<div class="post__preview-decor @@prevClass">@@prevTitle</div>
+		</div>
+		<div class="post__main">
+			<div class="post__metadata">
+				<span class="post__type">@@type</span>
+				<span class="post__date">@@date</span>
+				@@if(duration != '') {
+				<span class="post__duration">@@duration</span>
+				}
+			</div>
+			<span class="post__title">@@title</span>
+			<p class="post__text">@@text</p>
+		</div>
+		<a class="post__ref" href='post.html' target='_blank' rel='noopener noreferrer'>@@refText</a>
+	</div>
+</article>

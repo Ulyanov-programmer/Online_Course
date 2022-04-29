@@ -1,0 +1,85 @@
+@import '_vars';
+@import '_mixins';
+
+.second-subscribe {
+	background #F4F5F6;
+
+	&__body {
+		display grid;
+		grid-template 'dec title title title' 1fr 'dec form form form' 1fr / 1fr 1fr 1fr 1fr;
+		align-items center;
+		gap 50px;
+
+		@media (max-width 1200px) {
+			grid-template 'dec' 200px 'title' auto 'form' auto / 1fr;
+			align-items stretch;
+			gap 30px;
+			padding-bottom 30px;
+		}
+
+		@media (min-width 426px) and (max-width 768px) {
+			grid-template '. dec dec .' 1fr 'title title title title' auto 'form form form form' auto / 1fr 1fr 1fr 1fr;
+		}
+	}
+
+	&__decor {
+		grid-area dec;
+
+		@media (max-width 1200px) {
+			text-align center;
+
+			img {
+				block-size 100%;
+				object-fit contain;
+			}
+		}
+	}
+
+	&__title {
+		grid-area title;
+		align-self end;
+
+		@media (max-width 1440px) {
+			font-size 34px;
+		}
+
+		@media (max-width 1200px) {
+			text-align center;
+			padding-top 0;
+		}
+	}
+
+	&__form {
+		grid-area form;
+		align-self start;
+	}
+}
+
+.sub-form {
+	display grid;
+	grid-template 'input input submit' auto 'check check check' auto / 25px 1fr 35%;
+	gap 10px 20px;
+
+	@media (max-width 1200px) {
+		grid-template 'input input input' 1fr 'check check check' auto '. submit .' 1fr / 1fr 1fr 1fr;
+		gap 30px;
+	}
+
+	.label-checkbox {
+		@media (min-width 1440px) {
+			justify-self start;
+		}
+	}
+
+	input {
+		grid-area input;
+	}
+
+	label {
+		grid-area check;
+	}
+
+	button {
+		grid-area submit;
+	}
+}

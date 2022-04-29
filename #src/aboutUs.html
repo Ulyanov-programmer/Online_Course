@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	@@include('_headContent.htm', {
+	"title": "Online Course - About Us",
+	})
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="css/aboutUs.min.css">
+</head>
+
+<body>
+	@@include('_header.htm', {
+	'activePage': '1',
+	})
+
+	<main class="main">
+		<div class="main__body">
+			<section class='second-hero top-block'>
+				<div class='second-hero__body container body-small-padding'>
+					<div class="title-wrapper">
+						<span class="second-hero__subtitle subtitle">About us</span>
+						<h2 tabindex='0' class='second-hero__title title'>Createx Online School</h2>
+					</div>
+					<span class="second-hero__text-title text">Createx Online School is a leader in online studying. We have lots of courses and programs from
+						the main market experts.</span>
+					<p class="second-hero__text text">
+						We provide relevant approaches to online learning, internships and employment in the largest companies in the country. Our educational
+						programs help
+						you get a new specialty from scratch. During your studies, we will help you find a job. Check the courses and online events that we
+						organise.
+					</p>
+					<div class="second-hero__refs">
+						<a class="button button_reverse" href='events.html' target='_blank' rel='noopener noreferrer'>Explore events</a>
+						<a class="button" href='courses.html' target='_blank' rel='noopener noreferrer'>Browse courses</a>
+					</div>
+					<div class="second-hero__decor contain-image">
+						<img src="img/decor/secondHeroDec.png" loading='lazy' alt='' width=465 height=400>
+					</div>
+				</div>
+			</section>
+			<section class='advantages-video'>
+				<div class="advantages-video__decor abstract-images">
+					<img src="img/decor/yellowSquareDots.svg" class="abstract-images__element dots">
+				</div>
+				<div class='advantages-video__body container body-small-padding'>
+					<button data-modal-link="video" type="button" class="advantages-video__play-video hero__play-video">
+						<div class="hero__play-video-img">
+							<img src="img/play-video.svg" loading='lazy' alt='play button'>
+						</div>
+						<span>Watch Video</span>
+					</button>
+					<button data-modal-link="video" class='advantages-video__play-preview contain-image' aria-label='play video' type='button'>
+						<img src="img/playPreview.jpg" loading='lazy' alt='play preview' width=810 height=500>
+					</button>
+					<div class="advantages-video__advantages">
+						<section class='advantage'>
+							<div class='advantage__body'>
+								<span class="advantage__number">1200</span>
+								<span class="advantage__title">Students graduated</span>
+							</div>
+						</section>
+						<section class='advantage'>
+							<div class='advantage__body'>
+								<span class="advantage__number">840</span>
+								<span class="advantage__title">Completed courses</span>
+							</div>
+						</section>
+						<section class='advantage'>
+							<div class='advantage__body'>
+								<span class="advantage__number">16</span>
+								<span class="advantage__title">Qualified tutors</span>
+							</div>
+						</section>
+						<section class='advantage'>
+							<div class='advantage__body'>
+								<span class="advantage__number">5</span>
+								<span class="advantage__title">Years of experience</span>
+							</div>
+						</section>
+					</div>
+				</div>
+			</section>
+			<section class='advantages'>
+				<div class="advantages__decor abstract-images">
+					<img src="img/decor/yellowArrows.svg" class="abstract-images__element arrows">
+				</div>
+				<div class='advantages__body container body-small-padding'>
+					<div class="title-wrapper title-wrapper_centred">
+						<span class="advantages__subtitle subtitle">We always stand for</span>
+						<h2 tabindex='0' class='advantages__title title'>Our core values</h2>
+					</div>
+					<div class="advantages__items">
+						<div class="advantages-item">
+							<div class="advantages-item__preview">
+								<img src="img/advantages/structured.svg" loading='lazy' alt='Structured Approach'>
+							</div>
+							<span class="advantages-item__title">Structured Approach</span>
+							<p class="advantages-item__text text">Aenean urna dictum adipiscing nec, cras quisque. Nunc in mauris.</p>
+						</div>
+						<div class="advantages-item">
+							<div class="advantages-item__preview">
+								<img src="img/advantages/feedbacks.svg" loading='lazy' alt='Professional Feedbacks'>
+							</div>
+							<span class="advantages-item__title">Professional Feedbacks</span>
+							<p class="advantages-item__text text">Culpa nostrud commodo ea consequat reprehenderit aliquip.</p>
+						</div>
+						<div class="advantages-item">
+							<div class="advantages-item__preview">
+								<img src="img/advantages/efficiency.svg" loading='lazy' alt='Efficiency'>
+							</div>
+							<span class="advantages-item__title">Efficiency</span>
+							<p class="advantages-item__text text">Viverra scelerisque consequat net. Adipisicing esse consequat.</p>
+						</div>
+						<div class="advantages-item">
+							<div class="advantages-item__preview">
+								<img src="img/advantages/flexShedule.svg" loading='lazy' alt='Flexible Shedule'>
+							</div>
+							<span class="advantages-item__title">Flexible Shedule</span>
+							<p class="advantages-item__text text">Aute eiusmod dolore dolore deserunt veniam ad deserunt.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class='what-we-teach'>
+				<div class='what-we-teach__body container body-big-padding'>
+					<div class="title-wrapper title-wrapper_centred">
+						<span class="what-we-teach__subtitle subtitle">our main directions</span>
+						<h2 tabindex='0' class='what-we-teach__title title'>What do we teach</h2>
+					</div>
+					<div class="what-we-teach__grid">
+						@@include('_particularCourse.htm', {
+						'img': 'course1',
+						'spec': 'Marketing',
+						'speccolor': 'green',
+						'text': 'Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum eu viverra faucibus. Viverra scelerisque consequat.',
+						})
+						@@include('_particularCourse.htm', {
+						'img': 'course2',
+						'spec': 'Management',
+						'speccolor': 'blue',
+						'text': 'Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum eu viverra faucibus. Viverra scelerisque consequat.',
+						})
+						@@include('_particularCourse.htm', {
+						'img': 'course3',
+						'spec': 'HR & Recruting',
+						'speccolor': 'orange',
+						'text': 'Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum eu viverra faucibus. Viverra scelerisque consequat.',
+						})
+						@@include('_particularCourse.htm', {
+						'img': 'course4',
+						'spec': 'Design',
+						'speccolor': 'purple',
+						'text': 'Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum eu viverra faucibus. Viverra scelerisque consequat.',
+						})
+						@@include('_particularCourse.htm', {
+						'img': 'course5',
+						'spec': 'Development',
+						'speccolor': 'darkblue',
+						'text': 'Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum eu viverra faucibus. Viverra scelerisque consequat.',
+						})
+						<div class="coming-soon">
+							New studying program coming soon...
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class='how-we-do-by-step'>
+				<div class="how-we-do-by-step__decor abstract-images">
+					<img src="img/decor/yellowCircles.svg" class="abstract-images__element circles">
+				</div>
+				<div class='how-we-do-by-step__body container body-small-padding'>
+					<div class="title-wrapper">
+						<span class="how-we-do-by-step__subtitle subtitle">Studying process</span>
+						<h2 tabindex='0' class='how-we-do-by-step__title title'>That’s how we do it</h2>
+					</div>
+					<div class="how-we-do-by-step__decor contain-image">
+						<img src="img/decor/howWeDoByStepDecor.png" loading='lazy' width=525 height=620>
+					</div>
+					<div class="how-we-do-by-step__steps">
+						<section class="step">
+							<div class="step__body">
+								<span class="step__number">1</span>
+								<span class="step__title">Watching online video lectures</span>
+								<p class="step__text">Aliquam turpis viverra quam sit interdum blandit posuere pellentesque. Nisl, imperdiet gravida massa neque.</p>
+							</div>
+						</section>
+						<section class="step">
+							<div class="step__body">
+								<span class="step__number">2</span>
+								<span class="step__title">Passing test</span>
+								<p class="step__text">Aliquam turpis viverra quam sit interdum blandit posuere pellentesque. Nisl, imperdiet gravida massa neque.</p>
+							</div>
+						</section>
+						<section class="step">
+							<div class="step__body">
+								<span class="step__number">3</span>
+								<span class="step__title">Curator’s feedback</span>
+								<p class="step__text">Aliquam turpis viverra quam sit interdum blandit posuere pellentesque. Nisl, imperdiet gravida massa neque.</p>
+							</div>
+						</section>
+						<section class="step">
+							<div class="step__body">
+								<span class="step__number">4</span>
+								<span class="step__title">Corrections if needed</span>
+								<p class="step__text">Aliquam turpis viverra quam sit interdum blandit posuere pellentesque. Nisl, imperdiet gravida massa neque.</p>
+							</div>
+						</section>
+					</div>
+				</div>
+			</section>
+			<section class='meet-our-team'>
+				<div class="meet-our-team__decor abstract-images">
+					<img src="img/decor/yellowArrows.svg" class="abstract-images__element arrows">
+				</div>
+				<div class='meet-our-team__body container body-small-padding'>
+					<div class="title-wrapper title-wrapper_centred">
+						<span class="meet-our-team__subtitle subtitle">Best tutors are all here</span>
+						<h2 tabindex='0' class='title meet-our-team__title '>Meet our team</h2>
+					</div>
+					<div class="meet-our-team__grid-team">
+						@@include('_teamMember.htm', {
+						'img': 'Dianne',
+						'name': 'Dianne Russell',
+						'post': 'Founder and CEO',
+						})
+						@@include('_teamMember.htm', {
+						'img': 'Jerome',
+						'name': 'Jerome Bell',
+						'post': 'Founder and Program Director',
+						})
+						@@include('_teamMember.htm', {
+						'img': 'Kristin',
+						'name': 'Kristin Watson',
+						'post': 'Marketer, Curator of Marketing Course',
+						})
+						@@include('_teamMember.htm', {
+						'img': 'Marvin',
+						'name': 'Marvin McKinney',
+						'post': 'PM, Curator of Management Course',
+						})
+						@@include('_teamMember.htm', {
+						'img': 'Leslie',
+						'name': 'Leslie Alexander Li',
+						'post': 'Curator of HR & Recruting Course',
+						})
+						@@include('_teamMember.htm', {
+						'img': 'Kathryn',
+						'name': 'Kathryn Murphy',
+						'post': 'Analyst and Marketing specialist',
+						})
+						@@include('_teamMember.htm', {
+						'img': 'Brooklyn',
+						'name': 'Brooklyn Simmons',
+						'post': 'Curator of Development Course',
+						})
+						@@include('_teamMember.htm', {
+						'img': 'Cody',
+						'name': 'Cody Fisher',
+						'post': 'UX Designer, Curator of Design Course',
+						})
+					</div>
+				</div>
+			</section>
+			<section class='our-team'>
+				<div class="our-team__decor abstract-images">
+					<img src="img/decor/semicircle.svg" class="abstract-images__element semicircle">
+					<img src="img/decor/shapes.svg" class="abstract-images__element shapes">
+					<img src="img/decor/small-circles.svg" class="abstract-images__element small-circles">
+					<img src="img/decor/shortShapes.svg" class="abstract-images__element short-shapes">
+					<img src="img/decor/circles.svg" class="abstract-images__element right-bottom-circles">
+				</div>
+				<div class='our-team__body body-big-padding container'>
+					<div class="our-team__students-say students-say">
+						<div class="our-team__header">
+							<div class="title-wrapper title-wrapper_centred">
+								<span class="our-team__subtitle subtitle">TESTIMONIALS</span>
+								<h2 tabindex='0' class='our-team__title title'>What our students say</h2>
+							</div>
+						</div>
+						<div class="our-team__students-say-slider-wrapper">
+							<div id="students-say-slider__prev" class='students-say-slider__prev our-team-slider__prev-btn'>
+								<svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M6.20711 11.2071C5.81658 11.5976 5.18342 11.5976 4.79289 11.2071L0.292892 6.70711C-0.0976315 6.31658 -0.0976315 5.68342 0.292892 5.29289L4.79289 0.792893C5.18342 0.402369 5.81658 0.402369 6.20711 0.792893C6.59763 1.18342 6.59763 1.81658 6.20711 2.20711L3.41421 5L17 5C17.5523 5 18 5.44772 18 6C18 6.55228 17.5523 7 17 7L3.41421 7L6.20711 9.79289C6.59763 10.1834 6.59763 10.8166 6.20711 11.2071Z"
+										fill="#424551" />
+								</svg>
+							</div>
+							<div class='swiper students-say-slider'>
+								<div class='swiper-wrapper'>
+									<div class='swiper-slide'>
+										<article class="quote">
+											<div class="quote__body">
+												<div class="quote__decor">
+													<img src="img/decor/quoteDec.svg" loading='lazy'>
+												</div>
+												<p class="quote__text">
+													Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis fermentum amet, eu.
+													Pulvinar eu sed purus
+													facilisi. Vitae id turpis tempus ornare turpis quis non. Congue tortor in euismod vulputate etiam eros. Pulvinar neque
+													pharetra arcu diam maecenas
+													diam integer in.
+												</p>
+												<div class="quote__author-data">
+													<div class="quote__author-img">
+														<img src="img/quoteAuthor.jpg" loading='lazy' alt='Eleanor Pena' width=72 height=72>
+													</div>
+													<span class="quote__author-name">Eleanor Pena</span>
+													<span class="quote__author-post">Position, Course</span>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div class='swiper-slide'>
+										<article class="quote">
+											<div class="quote__body">
+												<div class="quote__decor">
+													<img src="img/decor/quoteDec.svg" loading='lazy'>
+												</div>
+												<p class="quote__text">
+													Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis fermentum amet, eu.
+													Pulvinar eu sed purus
+													facilisi. Vitae id turpis tempus ornare turpis quis non. Congue tortor in euismod vulputate etiam eros. Pulvinar neque
+													pharetra arcu diam maecenas
+													diam integer in.
+												</p>
+												<div class="quote__author-data">
+													<div class="quote__author-img">
+														<img src="img/quoteAuthor.jpg" loading='lazy' alt='Eleanor Pena' width=72 height=72>
+													</div>
+													<span class="quote__author-name">Eleanor Pena</span>
+													<span class="quote__author-post">Position, Course</span>
+												</div>
+											</div>
+										</article>
+									</div>
+								</div>
+							</div>
+							<div id="students-say-slider__next" class='students-say-slider__next our-team-slider__next-btn'>
+								<svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M11.7929 0.792893C12.1834 0.402369 12.8166 0.402369 13.2071 0.792893L17.7071 5.29289C18.0976 5.68342 18.0976 6.31658 17.7071 6.70711L13.2071 11.2071C12.8166 11.5976 12.1834 11.5976 11.7929 11.2071C11.4024 10.8166 11.4024 10.1834 11.7929 9.79289L14.5858 7H1C0.447715 7 0 6.55228 0 6C0 5.44772 0.447715 5 1 5H14.5858L11.7929 2.20711C11.4024 1.81658 11.4024 1.18342 11.7929 0.792893Z"
+										fill="#424551" />
+								</svg>
+							</div>
+							<div class='swiper-pagination students-say-slider__pag'></div>
+						</div>
+					</div>
+					<div class="our-team__where-our-students-work">
+						<div class="title-wrapper title-wrapper_centred">
+							<span class="our-team__subtitle subtitle">best jobs for you</span>
+							<h2 tabindex='0' class='our-team__title title'>Our students work here</h2>
+						</div>
+						<div class="friend-companies">
+							<div class="friend-companies__company">
+								<img src="img/companies/sentinalConsulting.png" loading='lazy' alt='sunset realty' width=120 height=64>
+							</div>
+							<div class="friend-companies__company">
+								<img src="img/companies/heigherFit.png" loading='lazy' alt='sunset realty' width=120 height=64>
+							</div>
+							<div class="friend-companies__company">
+								<img src="img/companies/happyHome.png" loading='lazy' alt='sunset realty' width=120 height=64>
+							</div>
+							<div class="friend-companies__company">
+								<img src="img/companies/forSale.png" loading='lazy' alt='sunset realty' width=120 height=64>
+							</div>
+							<div class="friend-companies__company">
+								<img src="img/companies/sunsetRealty.png" loading='lazy' alt='sunset realty' width=120 height=64>
+							</div>
+							<div class="friend-companies__company">
+								<img src="img/companies/DMS.png" loading='lazy' alt='sunset realty' width=120 height=64>
+							</div>
+							<div class="friend-companies__company">
+								<img src="img/companies/CH.png" loading='lazy' alt='sunset realty' width=120 height=64>
+							</div>
+							<div class="friend-companies__company">
+								<img src="img/companies/national.png" loading='lazy' alt='sunset realty' width=120 height=64>
+							</div>
+							<div class="friend-companies__company">
+								<img src="img/companies/US.png" loading='lazy' alt='sunset realty' width=120 height=64>
+							</div>
+							<div class="friend-companies__company">
+								<img src="img/companies/forSale.png" loading='lazy' alt='sunset realty' width=120 height=64>
+							</div>
+							<div class="friend-companies__company">
+								<img src="img/companies/ultimateGym.png" loading='lazy' alt='sunset realty' width=120 height=64>
+							</div>
+							<div class="friend-companies__company">
+								<img src="img/companies/US.png" loading='lazy' alt='sunset realty' width=120 height=64>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class='lasted-posts'>
+				<div class='lasted-posts__body body-big-padding container'>
+					<div class="lasted-posts__header">
+						<div class="title-wrapper">
+							<span class="lasted-posts__subtitle subtitle">Our blog</span>
+							<h2 tabindex='0' class='lasted-posts__title title'>Latest posts</h2>
+						</div>
+						<a class="lasted-posts__ref button" href='blog.html' target='_blank' rel='noopener noreferrer'>Go to blog</a>
+					</div>
+					<div class="lasted-posts__content">
+						@@include('_post.htm', {
+						'img': 'post1',
+						'prevClass': 'podcast',
+						'prevTitle': 'Podcast',
+						'type': 'Marketing',
+						'date': 'September 4, 2020',
+						'duration': '36 min',
+						'title': 'What is traffic arbitrage and does it really make money?',
+						'text': 'Pharetra, ullamcorper iaculis viverra parturient sed id sed. Convallis proin dignissim lacus, purus gravida...',
+						'refText': 'Listen',
+						})
+						@@include('_post.htm', {
+						'img': 'post2',
+						'prevClass': 'video',
+						'prevTitle': 'Video',
+						'type': 'Management',
+						'date': 'August 25, 2020',
+						'duration': '45 min',
+						'title': 'What to do and who to talk to if you want to get feedback on the product',
+						'text': 'Neque a, senectus consectetur odio in aliquet nec eu. Ultricies ac nibh urna urna sagittis faucibus...',
+						'refText': 'Watch',
+						})
+						@@include('_post.htm', {
+						'img': 'post3',
+						'prevClass': 'article',
+						'prevTitle': 'Article',
+						'type': 'Design',
+						'date': 'August 8, 2020',
+						'duration': '',
+						'title': 'Should you choose a creative profession if you are attracted to creativity?',
+						'text': 'Curabitur nisl tincidunt eros venenatis vestibulum ac placerat. Tortor, viverra sed vulputate ultrices...',
+						'refText': 'Read',
+						})
+					</div>
+				</div>
+			</section>
+			<section class='subscribe'>
+				<div class="subscribe__decor abstract-images">
+					<img src="img/decor/subscrDecor.svg" class="abstract-images__element decor">
+					<img src="img/decor/subscrDecor.svg" class="abstract-images__element decor2">
+				</div>
+				<div class='subscribe__body container'>
+					<div class="title-wrapper title-wrapper_centred">
+						<span class="subscribe__subtitle subtitle">Don’t miss anything</span>
+						<h2 tabindex='0' class='subscribe__title title'>
+							Subscribe to the Createx School announcements</h2>
+					</div>
+					<form class='subscribe__form' action='#'>
+						<fieldset>
+							<legend hidden>Subscribe to the Createx School announcements</legend>
+							<input class='subscribe__input input' type='email' name='email' placeholder='Your working email' required>
+						</fieldset>
+						<button class="button" type='submit'>Subscribe</button>
+					</form>
+				</div>
+			</section>
+		</div>
+	</main>
+
+	@@include('_footer.htm', {})
+
+	@@include('_modals.htm', {
+	'sidebar': '',
+	})
+
+</body>
+
+<script type="module" src="scripts/generalScripts.js"></script>
+
+<!-- Swiper -->
+<link rel="stylesheet" href="css/swiper-bundle.min.css">
+<script defer src="scripts/swiper-bundle.min.js"></script>
+<script type="module" src="scripts/sliders.js"></script>
+
+</html>
+
+<!-- 
+  Made in Russia, with ❤, by Ivan Ulyanov. 
+-->

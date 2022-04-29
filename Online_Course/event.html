@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- maximum-scale=1.0, user-scalable=0 does not allow content to be scaled on Android. -->
+<!-- Disables forced link for phone number on iOS -->
+<meta name="format-detection" content="telephone=no">
+
+<meta name="description" content="description">
+<meta name="theme-color" content="#000000">
+<link rel="icon" href="./img/favicon.svg">
+<link rel="mask-icon" href="./img/favicon.svg" color="#FF3F3A">
+<!-- <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
+<!-- <link rel="manifest" href="manifest.json"> -->
+
+<link rel="preload" href="fonts/Lato-Regular.woff2" as="font" crossorigin>
+
+<!-- SEO
+    <meta name="keywords" content="keyword1,">
+    <meta name="robots" content="none,noindex,nofollow,noimageindex,noarchive,nosnippet">
+    <meta name="Author" content="Author">
+    <meta name="Copyright" content="Copyright">
+    <meta name="Address" content="Address"> 
+    <! - Redirect (reload) the page. Delay in seconds; url=Site / page address ->
+    <meta http-equiv="refresh" content="seconds; url = URL">
+
+    Facebook
+    <! - site localization, for the Russian-language site ru_RU ->
+    <meta property="og:locale" content="ru_RU">
+    <! - content type, default is article ->
+    <meta property="og:type" content="article">
+    <! - the title of the page that will be displayed in the post of the social network ->
+    <meta property="og:title" content="META tags">
+    <! - page description ->
+    <meta property="og:description" content="Description of the page about META tags">
+    <! - link to the image that will be published in the post ->
+    <meta property="og:image" content="path">
+    <! - link to the current page ->
+    <meta property="og: url" content="path">
+    <! - site name ->
+    <meta property="og:site_name" content="Freelancer for life">
+
+    Twitter
+    <! - Map type, default is summary ->
+    <meta name="twitter: card" content="summary">
+    <! - Author name / login ->
+    <meta name="twitter: site" content="Ivan">
+    <! - Page title ->
+    <meta name="twitter: title" content="META tags">
+    <! - Page description ->
+    <meta name="twitter: description" content="about META tags">
+    <! - Link to image ->
+    <meta name="twitter: image" content="path">
+  -->
+
+<title>Event X</title>
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="css/particularEvent.min.css">
+	<link rel="stylesheet" href="css/secondForm.min.css">
+</head>
+
+<body>
+	<header class="header">
+	<div class="header__body container">
+		<div class="header__left-container">
+			<a href="index.html" class="logo contain-image" aria-label="logo, reference to main page">
+				<img src="img/logo.svg" alt="logo" width=130 height=22>
+			</a>
+
+			<nav class="navmenu">
+				<div class="navmenu__body">
+					<ul class='navmenu__list'>
+						<li>
+							<a class="" target="_self" rel="noopener" href="aboutUs.html">About Us</a>
+							<a class="" target="_self" rel="noopener" href="courses.html">Courses</a>
+							<a class="active" target="_self" rel="noopener" href="events.html">Events</a>
+							<a class="" target="_self" rel="noopener" href="blog.html">Blog</a>
+							<a class="" target="_self" rel="noopener" href="contacts.html">Contacts</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+
+		<div class="actions">
+			<div class="actions__body">
+				<button class='button' aria-label='' type='button'>Get consultation</button>
+				<button data-modal-link="signUp" class='logn-registr' aria-label='open log0in or registration modal' type='button'>Log in / Register</button>
+			</div>
+		</div>
+
+		<button aria-label="burger-menu" type="button" id="burgerButton" class="header__burger burger-btn">
+			<svg class="burger-btn__svg" width="30" height="30" viewBox="0 0 150 100" xmlns="http://www.w3.org/2000/svg">
+				<rect class="burger-btn__rect-top" width="100%" height="10%" x="0" y="0%" fill="#424551" />
+				<rect class="burger-btn__rect-center" width="100%" height="10%" x="0" y="45%" fill="#424551" />
+				<rect class="burger-btn__rect-bottom" width="100%" height="10%" x="0" y="90%" fill="#424551" />
+			</svg>
+		</button>
+		<nav class="fullscreen-navmenu">
+			<div class="fullscreen-navmenu__body">
+				<ul>
+					<li class="fs-element"><a target="_self" rel="noopener" href="aboutUs.html">About Us</a></li>
+					<li class="fs-element"><a target="_self" rel="noopener" href="courses.html">Courses</a></li>
+					<li class="fs-element"><a target="_self" rel="noopener" href="events.html">Events</a></li>
+					<li class="fs-element"><a target="_self" rel="noopener" href="blog.html">Blog</a></li>
+					<li class="fs-element"><a target="_self" rel="noopener" href="contacts.html">Contacts</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+</header>
+
+	<main class="main">
+		<div class="main__body">
+			<section class='mini-hero top-block'>
+				<div class="mini-hero__decor abstract-images">
+					<img src="img/decor/shortShapes.svg" class="abstract-images__element short-shapes">
+					<img src="img/decor/dots.svg" class="abstract-images__element dots">
+					<img src="img/decor/shapes.svg" class="abstract-images__element shapes">
+					<img src="img/decor/circles.svg" class="abstract-images__element circles">
+				</div>
+				<div class='mini-hero__body container body-big-padding top-block'>
+					<div class="title-wrapper title-wrapper_centred">
+						<span class="mini-hero__subtitle subtitle">Online lecture</span>
+						<h1 tabindex='0' class='mini-hero__title title'>Formation of the organizational structure of the company in the face of uncertainty</h1>
+					</div>
+				</div>
+			</section>
+			<section class='about'>
+				<div class='about__body container body-big-padding'>
+					<div class="title-wrapper about__main">
+						<h2 tabindex='0' class='about__title title'>We will talk about:</h2>
+						<p class="about__text bl-text">Bibendum vulputate adipiscing venenatis at est, a eu tincidunt. Leo aenean congue in sagittis, felis
+							maecenas amet
+							varius at. Pellentesque euismod in faucibus at elementum. Tellus maecenas libero est tempus sit cras at malesuada diam. Consequat
+							senectus dictumst non hac dignissim montes, pretium, egestas molestie. Sed magna aliquet ornare nibh vel lectus diam eget pretium. Lorem
+							risus nunc tincidunt tortor, mi nulla pellentesque</p>
+					</div>
+					<div class="about__metadata">
+						<div class="what-learn__spoilers">
+							<div class="what-learn__spoiler-block">
+								<button type="button" class="spoiler-btn">
+									<svg height="128px" id="Layer_1" style="enable-background:new 0 0 128 128;" version="1.1" viewBox="0 0 128 128" width="128px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+										xmlns:xlink="http://www.w3.org/1999/xlink">
+										<g>
+											<line class="gor-line" style="fill:none;stroke:#FF3F3A;stroke-width:12;stroke-miterlimit:10;" x1="13.787" x2="114.213" y1="64.001" y2="64.001" />
+											<line class="vert-line" style="fill:none;stroke:#FF3F3A;stroke-width:12;stroke-miterlimit:10;" x1="64" x2="64" y1="13.787" y2="114.213" />
+										</g>
+									</svg>
+									<span>1</span>
+									Aliquet lectus urna viverra in odio.</button>
+								<div class="spoiler-content" hidden="">
+									<p class="text">Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi
+										curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu
+										feugiat facilisis. Commodo nunc orci vitae accumsan id.</p>
+								</div>
+							</div>
+							<div class="what-learn__spoiler-block">
+								<button type="button" class="spoiler-btn">
+									<svg height="128px" id="Layer_1" style="enable-background:new 0 0 128 128;" version="1.1" viewBox="0 0 128 128" width="128px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+										xmlns:xlink="http://www.w3.org/1999/xlink">
+										<g>
+											<line class="gor-line" style="fill:none;stroke:#FF3F3A;stroke-width:12;stroke-miterlimit:10;" x1="13.787" x2="114.213" y1="64.001" y2="64.001" />
+											<line class="vert-line" style="fill:none;stroke:#FF3F3A;stroke-width:12;stroke-miterlimit:10;" x1="64" x2="64" y1="13.787" y2="114.213" />
+										</g>
+									</svg>
+									<span>2</span>
+									Orci commodo, viverra orci mollis ut euismod.</button>
+								<div class="spoiler-content" hidden="">
+									<p class="text">Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi
+										curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu
+										feugiat facilisis. Commodo nunc orci vitae accumsan id.</p>
+								</div>
+							</div>
+							<div class="what-learn__spoiler-block">
+								<button type="button" class="spoiler-btn">
+									<svg height="128px" id="Layer_1" style="enable-background:new 0 0 128 128;" version="1.1" viewBox="0 0 128 128" width="128px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+										xmlns:xlink="http://www.w3.org/1999/xlink">
+										<g>
+											<line class="gor-line" style="fill:none;stroke:#FF3F3A;stroke-width:12;stroke-miterlimit:10;" x1="13.787" x2="114.213" y1="64.001" y2="64.001" />
+											<line class="vert-line" style="fill:none;stroke:#FF3F3A;stroke-width:12;stroke-miterlimit:10;" x1="64" x2="64" y1="13.787" y2="114.213" />
+										</g>
+									</svg>
+									<span>3</span>
+									Sagittis vitae facilisi rutrum amet mauris quisque vel.</button>
+								<div class="spoiler-content" hidden="">
+									<p class="text">Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi
+										curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu
+										feugiat facilisis. Commodo nunc orci vitae accumsan id.</p>
+								</div>
+							</div>
+							<div class="what-learn__spoiler-block">
+								<button type="button" class="spoiler-btn">
+									<svg height="128px" id="Layer_1" style="enable-background:new 0 0 128 128;" version="1.1" viewBox="0 0 128 128" width="128px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+										xmlns:xlink="http://www.w3.org/1999/xlink">
+										<g>
+											<line class="gor-line" style="fill:none;stroke:#FF3F3A;stroke-width:12;stroke-miterlimit:10;" x1="13.787" x2="114.213" y1="64.001" y2="64.001" />
+											<line class="vert-line" style="fill:none;stroke:#FF3F3A;stroke-width:12;stroke-miterlimit:10;" x1="64" x2="64" y1="13.787" y2="114.213" />
+										</g>
+									</svg>
+									<span>3</span>
+									Sagittis vitae facilisi rutrum amet mauris quisque vel.</button>
+								<div class="spoiler-content" hidden="">
+									<p class="text">Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec pulvinar aliquet donec enim, ornare. Lacus facilisi
+										curabitur turpis varius mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur faucibus porttitor quis sem lacus, arcu
+										feugiat facilisis. Commodo nunc orci vitae accumsan id.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<article class="about__card course-card">
+						<div class="course-card__section">
+							<span class="course-card__section-name fat-text">Time</span>
+							<div class="course-card__secondary-data">August 5, 11:00 – 14:00</div>
+							<p class="course-card__text text">Metus turpis sit lorem lacus, in elit tellus lacus.</p>
+						</div>
+						<div class="course-card__section">
+							<span class="course-card__section-name fat-text">Price</span>
+							<div class="course-card__secondary-data">Free</div>
+							<p class="course-card__text text">Nulla sem adipiscing adipiscing felis fringilla. Adipiscing mauris quam ac elit tristique dis.</p>
+						</div>
+						<div class="course-card__section">
+							<a href="#" class="course-card__ref">Event on Facebook</a>
+						</div>
+						<button type="button" class="button course-card__join">Join the event</button>
+					</article>
+				</div>
+			</section>
+			<section class='main-curator'>
+				<div class="main-curator__decor abstract-images">
+					<img src="img/decor/aboutUsCircles.svg" class="abstract-images__element circles">
+				</div>
+				<div class='main-curator__body container body-small-padding'>
+					<div class="main-curator__photo contain-image">
+<picture><source srcset="img/curators/Kathryn.avif" type="image/avif"><source srcset="img/curators/Kathryn.webp" type="image/webp"><img src="img/curators/Kathryn.jpg" loading='lazy' alt='Kathryn Murphy photo' width=458 height=600></picture>
+					</div>
+					<div class="main-curator__content">
+						<div class='title-wrapper main-curator__titles'>
+							<div class="main-curator__mobile-photo contain-image">
+<picture><source srcset="img/curators/Kathryn.avif" type="image/avif"><source srcset="img/curators/Kathryn.webp" type="image/webp"><img src="img/curators/Kathryn.jpg" loading='lazy' alt='Kathryn Murphy photo' width=458 height=600></picture>
+							</div>
+							<span class='main-curator__subtitle subtitle'>Speaker</span>
+							<h2 tabindex='0' class='main-curator__title title'>Kathryn Murphy</h2>
+							<span class="main-curator__post text">Analyst and Marketing specialist in IT company</span>
+						</div>
+						<p class="main-curator__about bl-text">Mattis adipiscing aliquam eu proin metus a iaculis faucibus. Tempus curabitur venenatis, vulputate
+							venenatis fermentum ante. Nisl, amet id semper semper quis commodo, consequat. Massa rhoncus sit morbi odio. Sit maecenas nibh
+							consectetur vel diam. Sem vulputate molestie laoreet at massa sed pharetra. Ac commodo platea id habitasse proin. Nullam sit nec ipsum
+							posuere non. Nam vel aliquam tristique sollicitudin interdum quam. </p>
+						<div class="main-curator__companies">
+							<div class="main-curator__company contain-image">
+							</div>
+							<div class="main-curator__company contain-image">
+							</div>
+							<div class="main-curator__company contain-image">
+							</div>
+						</div>
+						<div class="main-curator__socials">
+							<a href="#" class="main-curator__social-ref anim-svg" aria-label="facebook">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M17.5628 1.00458L14.7856 1C11.6654 1 9.64903 3.12509 9.64903 6.41423V8.91055H6.85662C6.61532 8.91055 6.41992 9.1115 6.41992 9.35937V12.9763C6.41992 13.2241 6.61554 13.4249 6.85662 13.4249H9.64903V22.5514C9.64903 22.7993 9.84443 23 10.0857 23H13.729C13.9703 23 14.1657 22.799 14.1657 22.5514V13.4249H17.4307C17.672 13.4249 17.8674 13.2241 17.8674 12.9763L17.8688 9.35937C17.8688 9.24036 17.8226 9.12638 17.7409 9.04215C17.6591 8.95793 17.5477 8.91055 17.4318 8.91055H14.1657V6.79439C14.1657 5.77728 14.4017 5.26094 15.6915 5.26094L17.5624 5.26025C17.8035 5.26025 17.9989 5.0593 17.9989 4.81166V1.45317C17.9989 1.20576 17.8037 1.00504 17.5628 1.00458Z"
+										fill="#787A80" />
+								</svg>
+							</a>
+							<a href="#" class="main-curator__social-ref anim-svg" aria-label="behance">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0_2492_17701)">
+										<path
+											d="M12.3652 15.1437C12.3652 13.1724 11.486 11.7153 9.66971 11.1692C10.9949 10.4961 11.6861 9.47637 11.6861 7.8902C11.6861 4.76268 9.49368 4 6.96423 4H0V19.7027H7.15926C9.84374 19.7027 12.3652 18.3341 12.3652 15.1437ZM3.24657 6.68058H6.29311C7.46432 6.68058 8.51851 7.03045 8.51851 8.47475C8.51851 9.8081 7.69836 10.3446 6.53816 10.3446H3.24657V6.68058ZM3.24557 17.036V12.7116H6.7842C8.21345 12.7116 9.11761 13.3452 9.11761 14.9538C9.11761 16.54 8.03842 17.036 6.71719 17.036H3.24557Z"
+											fill="#787A80" />
+										<path
+											d="M18.7993 20C21.3537 20 23.008 18.7765 23.8041 16.1759H21.2117C20.9326 17.1466 19.7824 17.6597 18.8903 17.6597C17.169 17.6597 16.2648 16.5877 16.2648 14.7658H23.9792C24.2232 11.1198 22.3189 8.01257 18.7983 8.01257C15.5387 8.01257 13.3263 10.6174 13.3263 14.0297C13.3263 17.5711 15.4227 20 18.7993 20ZM18.7073 10.3721C20.1825 10.3721 20.9246 11.2937 21.0487 12.8009H16.2688C16.3658 11.3065 17.299 10.3721 18.7073 10.3721Z"
+											fill="#787A80" />
+										<path d="M15.6701 4.82507H21.6591V6.37177H15.6701V4.82507Z" fill="#787A80" />
+									</g>
+									<defs>
+										<clipPath id="clip0_2492_17701">
+											<rect width="24" height="24" fill="white" />
+										</clipPath>
+									</defs>
+								</svg>
+							</a>
+							<a href="#" class="main-curator__social-ref anim-svg" aria-label="twitter">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M22.5 5.77233C21.7271 6.10027 20.8978 6.32267 20.0264 6.42196C20.9161 5.91181 21.5972 5.10263 21.92 4.1414C21.0854 4.61383 20.1642 4.95688 19.1826 5.14285C18.3966 4.33994 17.2785 3.83984 16.0384 3.83984C13.6593 3.83984 11.7303 5.68691 11.7303 7.9637C11.7303 8.2866 11.7683 8.60199 11.8418 8.90357C8.26201 8.73141 5.08768 7.08917 2.96314 4.59372C2.59176 5.20189 2.38049 5.91053 2.38049 6.66697C2.38049 8.09814 3.14161 9.36093 4.2964 10.0997C3.5904 10.0771 2.92639 9.89116 2.34508 9.58205V9.63357C2.34508 11.6314 3.83056 13.2988 5.80024 13.6783C5.43936 13.7713 5.05882 13.8228 4.66514 13.8228C4.38696 13.8228 4.11794 13.7964 3.85417 13.7461C4.40267 15.3859 5.99315 16.5783 7.87756 16.611C6.40388 17.7167 4.54573 18.3739 2.52749 18.3739C2.17976 18.3739 1.83724 18.3537 1.5 18.3173C3.40671 19.4896 5.67036 20.1732 8.10327 20.1732C16.028 20.1732 20.3597 13.8881 20.3597 8.43741L20.3453 7.90341C21.1917 7.32537 21.9239 6.59912 22.5 5.77233Z"
+										fill="#787A80" />
+								</svg>
+							</a>
+							<a href="#" class="main-curator__social-ref anim-svg" aria-label="Linked-In">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M21.995 22L22 21.9992V14.6642C22 11.0758 21.2275 8.31167 17.0325 8.31167C15.0158 8.31167 13.6625 9.41833 13.11 10.4675H13.0517V8.64667H9.07416V21.9992H13.2158V15.3875C13.2158 13.6467 13.5458 11.9633 15.7017 11.9633C17.8258 11.9633 17.8575 13.95 17.8575 15.4992V22H21.995Z"
+										fill="#787A80" />
+									<path d="M2.32999 8.6475H6.47666V22H2.32999V8.6475Z" fill="#787A80" />
+									<path d="M4.40167 2C3.07583 2 2 3.07583 2 4.40167C2 5.7275 3.07583 6.82583 4.40167 6.82583C5.7275 6.82583 6.80333 5.7275 6.80333 4.40167C6.8025 3.07583 5.72667 2 4.40167 2Z"
+										fill="#787A80" />
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class='for-whom'>
+				<div class="for-whom__decor abstract-images">
+				</div>
+				<div class='for-whom__body container body-small-padding'>
+					<span class='for-whom__subtitle subtitle'>For whom?</span>
+					<h2 tabindex='0' class='for-whom__title title'>Who will benefit from the event:</h2>
+					<ul class="for-whom__list">
+						<li class="for-whom__li fat-text bl-text">Specialists with more than 1 year of active work experience</li>
+						<li class="for-whom__li fat-text bl-text">Mobile app designers who want to improve their skills in solving business problems, creating and
+							testing human-centered interfaces</li>
+						<li class="for-whom__li fat-text bl-text">Professional designers who want to feel more confident in UX</li>
+					</ul>
+				</div>
+			</section>
+			<section class='subscribe-form body-small-padding'>
+				<div class='second-subscribe__body container'>
+					<div class="second-subscribe__decor contain-image">
+<picture><source srcset="img/decor/teacherFromPc.avif" type="image/avif"><source srcset="img/decor/teacherFromPc.webp" type="image/webp"><img src="img/decor/teacherFromPc.png" loading='lazy' alt='teacher' width=308 height=234></picture>
+					</div>
+					<h2 tabindex='0' class='second-subscribe__title title'>Don’t want to miss the best events?
+						Subscribe to our newsletter!</h2>
+					<form action="#" class="second-subscribe__form sub-form">
+						<input class='input' type='email' name='email' placeholder='Your working email' required>
+						<button class='button' type='submit'>Subscribe</button>
+
+						<label class="label_row label-checkbox" for='agree'>
+							<input type='checkbox' id='agree' name='agree' />
+							<span>I agree to receive communications from Createx Online School</span>
+						</label>
+					</form>
+				</div>
+			</section>
+			<section class="our-team__register-form our-team__register-form_reverse container body-small-padding">
+				<div class="our-team__decor contain-image">
+<picture><source srcset="img/decor/requestMan.avif" type="image/avif"><source srcset="img/decor/requestMan.webp" type="image/webp"><img src="img/decor/requestMan.jpg" loading='lazy' alt='student' width=600 height=468></picture>
+				</div>
+				<div class='our-team__form-title title-wrapper'>
+					<span class='our-team__subtitle subtitle'>Don’t miss the event</span>
+					<h2 tabindex='0' class='our-team__title title'>Leave a request</h2>
+				</div>
+				<form action="#" class="our-team__form">
+					<fieldset class=''>
+						<legend hidden>Sign up for the course</legend>
+
+						<label class='label' for='name-event'>
+							<span>Full Name</span>
+							<input id="name-event" class='input' type='text' name='name-event' placeholder='Your full name' required>
+						</label>
+						<label class='label' for='email-event'>
+							<span>Email</span>
+							<input id="email-event" class='input' type='email' name='email-event' placeholder='Your working email' required>
+						</label>
+						<label class='label' for='phone-event'>
+							<span>Phone</span>
+							<input id="phone-event" class='input' type='email' name='phone-event' placeholder='Your phone number' required>
+						</label>
+					</fieldset>
+
+					<button class="button our-team__form-submit" aria-label='submit this form' type='submit'>Join the course</button>
+					<span class="note">* You will receive a link to the online lecture in an email after registration.</span>
+				</form>
+			</section>
+			<section class="another-events slider-block">
+				<div class="another-events__decor abstract-images">
+					<img src="img/decor/circles.svg" class="abstract-images__element circles">
+					<img src="img/decor/shapes.svg" class="abstract-images__element shapes">
+				</div>
+				<div class="another-events__body container body-big-padding">
+					<header class="slider-block__header">
+						<div class='title-wrapper'>
+							<span class='another-events__subtitle subtitle'>Check other courses</span>
+							<h2 tabindex='0' class='another-events__title title'>You may also like</h2>
+						</div>
+						<div class="slider-block__buttons">
+							<div id="aePrevBtn" class='another-events__prev-btn our-team-slider__prev-btn'>
+								<svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M6.20711 11.2071C5.81658 11.5976 5.18342 11.5976 4.79289 11.2071L0.292892 6.70711C-0.0976315 6.31658 -0.0976315 5.68342 0.292892 5.29289L4.79289 0.792893C5.18342 0.402369 5.81658 0.402369 6.20711 0.792893C6.59763 1.18342 6.59763 1.81658 6.20711 2.20711L3.41421 5L17 5C17.5523 5 18 5.44772 18 6C18 6.55228 17.5523 7 17 7L3.41421 7L6.20711 9.79289C6.59763 10.1834 6.59763 10.8166 6.20711 11.2071Z"
+										fill="#424551" />
+								</svg>
+							</div>
+							<div id="aeNextBtn" class='another-events__next-btn our-team-slider__next-btn'>
+								<svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M11.7929 0.792893C12.1834 0.402369 12.8166 0.402369 13.2071 0.792893L17.7071 5.29289C18.0976 5.68342 18.0976 6.31658 17.7071 6.70711L13.2071 11.2071C12.8166 11.5976 12.1834 11.5976 11.7929 11.2071C11.4024 10.8166 11.4024 10.1834 11.7929 9.79289L14.5858 7H1C0.447715 7 0 6.55228 0 6C0 5.44772 0.447715 5 1 5H14.5858L11.7929 2.20711C11.4024 1.81658 11.4024 1.18342 11.7929 0.792893Z"
+										fill="#424551" />
+								</svg>
+							</div>
+						</div>
+					</header>
+					<div class="swiper another-events__slider slider-block__slider">
+						<div class='swiper-wrapper'>
+							<div class='swiper-slide'>
+								<article class="lecture lecture_bordered lecture_gray-shadow lecture_column">
+	<div class="lecture__body">
+		<div class="lecture__date">
+			<span class="lecture__number">05</span>
+			<span class="lecture__month">August</span>
+			<span class="lecture__time">11:00 – 14:00</span>
+		</div>
+		<div class="lecture__about">
+			<span class="lecture__title">Formation of the organizational structure of the company in the face of uncertainty.</span>
+			<span class="lecture__type text">Onine master-class</span>
+		</div>
+		<a class="lecture__ref button button_reverse" href='event.html' target='_blank' rel='noopener noreferrer'>View more</a>
+	</div>
+</article>
+							</div>
+							<div class="swiper-slide">
+								<article class="lecture lecture_bordered lecture_gray-shadow lecture_column">
+	<div class="lecture__body">
+		<div class="lecture__date">
+			<span class="lecture__number">24</span>
+			<span class="lecture__month">July</span>
+			<span class="lecture__time">11:00 – 12:30</span>
+		</div>
+		<div class="lecture__about">
+			<span class="lecture__title">Building a customer service department. Best Practices.</span>
+			<span class="lecture__type text">Onine lecture</span>
+		</div>
+		<a class="lecture__ref button button_reverse" href='event.html' target='_blank' rel='noopener noreferrer'>View more</a>
+	</div>
+</article>
+							</div>
+							<div class='swiper-slide'>
+								<article class="lecture lecture_bordered lecture_gray-shadow lecture_column">
+	<div class="lecture__body">
+		<div class="lecture__date">
+			<span class="lecture__number">16</span>
+			<span class="lecture__month">July</span>
+			<span class="lecture__time">11:00 – 13:00</span>
+		</div>
+		<div class="lecture__about">
+			<span class="lecture__title">How to apply methods of speculative design in practice. Worldbuilding prototyping.</span>
+			<span class="lecture__type text">Onine workshop</span>
+		</div>
+		<a class="lecture__ref button button_reverse" href='event.html' target='_blank' rel='noopener noreferrer'>View more</a>
+	</div>
+</article>
+							</div>
+							<div class='swiper-slide'>
+								<article class="lecture lecture_bordered lecture_gray-shadow lecture_column">
+	<div class="lecture__body">
+		<div class="lecture__date">
+			<span class="lecture__number">16</span>
+			<span class="lecture__month">July</span>
+			<span class="lecture__time">11:00 – 13:00</span>
+		</div>
+		<div class="lecture__about">
+			<span class="lecture__title">How to apply methods of speculative design in practice. Worldbuilding prototyping.</span>
+			<span class="lecture__type text">Onine workshop</span>
+		</div>
+		<a class="lecture__ref button button_reverse" href='event.html' target='_blank' rel='noopener noreferrer'>View more</a>
+	</div>
+</article>
+							</div>
+							<div class='swiper-slide'>
+								<article class="lecture lecture_bordered lecture_gray-shadow lecture_column">
+	<div class="lecture__body">
+		<div class="lecture__date">
+			<span class="lecture__number">16</span>
+			<span class="lecture__month">July</span>
+			<span class="lecture__time">11:00 – 13:00</span>
+		</div>
+		<div class="lecture__about">
+			<span class="lecture__title">How to apply methods of speculative design in practice. Worldbuilding prototyping.</span>
+			<span class="lecture__type text">Onine workshop</span>
+		</div>
+		<a class="lecture__ref button button_reverse" href='event.html' target='_blank' rel='noopener noreferrer'>View more</a>
+	</div>
+</article>
+							</div>
+						</div>
+					</div>
+					<footer class="slider-block__footer">
+						<span class="slider-block__footer-title bl-text fat-text">Do you want more?</span>
+						<a href="events.html" class="slider-block__ref button">Explore all events</a>
+					</footer>
+				</div>
+			</section>
+		</div>
+	</main>
+
+	<footer class="footer">
+	<div class="footer__body">
+		<div class="footer__top container">
+			<div class="footer__about footer__column">
+				<a href="index.html" class="logo" aria-label="logo, reference to main page">
+					<img src="img/logoWhite.svg" alt="logo" width=130 height=22>
+				</a>
+				<p class="footer__text">
+					Createx Online School is a leader in online studying. We have lots of courses and programs from the main market experts. We provide relevant
+					approaches to online learning, internships and employment in the largest companies in the country.
+				</p>
+				<div class="footer__socials socials">
+					<a href="#" class="socials__element">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g opacity="0.6">
+								<path
+									d="M17.5628 1.00458L14.7856 1C11.6654 1 9.64903 3.12509 9.64903 6.41423V8.91055H6.85662C6.61532 8.91055 6.41992 9.1115 6.41992 9.35937V12.9763C6.41992 13.2241 6.61554 13.4249 6.85662 13.4249H9.64903V22.5514C9.64903 22.7993 9.84443 23 10.0857 23H13.729C13.9703 23 14.1657 22.799 14.1657 22.5514V13.4249H17.4307C17.672 13.4249 17.8674 13.2241 17.8674 12.9763L17.8688 9.35937C17.8688 9.24036 17.8226 9.12638 17.7409 9.04215C17.6591 8.95793 17.5477 8.91055 17.4318 8.91055H14.1657V6.79439C14.1657 5.77727 14.4017 5.26094 15.6915 5.26094L17.5624 5.26025C17.8035 5.26025 17.9989 5.0593 17.9989 4.81166V1.45317C17.9989 1.20576 17.8037 1.00504 17.5628 1.00458Z"
+									fill="white" />
+							</g>
+						</svg>
+					</a>
+					<a href="#" class="socials__element">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g opacity="0.6">
+								<path
+									d="M22.5 5.77233C21.7271 6.10027 20.8978 6.32267 20.0264 6.42196C20.9161 5.91181 21.5972 5.10263 21.92 4.1414C21.0854 4.61383 20.1642 4.95688 19.1826 5.14285C18.3966 4.33994 17.2785 3.83984 16.0384 3.83984C13.6593 3.83984 11.7303 5.68691 11.7303 7.9637C11.7303 8.2866 11.7683 8.60199 11.8418 8.90357C8.26201 8.73141 5.08768 7.08917 2.96314 4.59372C2.59176 5.20189 2.38049 5.91053 2.38049 6.66697C2.38049 8.09814 3.14161 9.36093 4.2964 10.0997C3.5904 10.0771 2.92639 9.89116 2.34508 9.58205V9.63357C2.34508 11.6314 3.83056 13.2988 5.80024 13.6783C5.43936 13.7713 5.05882 13.8228 4.66514 13.8228C4.38696 13.8228 4.11794 13.7964 3.85417 13.7461C4.40267 15.3859 5.99315 16.5783 7.87756 16.611C6.40388 17.7167 4.54573 18.3739 2.52749 18.3739C2.17976 18.3739 1.83724 18.3537 1.5 18.3173C3.40671 19.4896 5.67036 20.1732 8.10327 20.1732C16.028 20.1732 20.3597 13.8881 20.3597 8.43741L20.3453 7.90341C21.1917 7.32537 21.9239 6.59912 22.5 5.77233Z"
+									fill="white" />
+							</g>
+						</svg>
+					</a>
+					<a href="#" class="socials__element">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g opacity="0.6">
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M21.3903 4.11358C22.4182 4.39044 23.2288 5.20086 23.5055 6.22899C24.0197 8.10691 23.9999 12.0213 23.9999 12.0213C23.9999 12.0213 23.9999 15.9158 23.5057 17.7939C23.2288 18.8218 22.4184 19.6324 21.3903 19.9091C19.5122 20.4035 12 20.4035 12 20.4035C12 20.4035 4.50731 20.4035 2.60961 19.8895C1.58148 19.6127 0.771054 18.802 0.4942 17.7741C0 15.9158 0 12.0015 0 12.0015C0 12.0015 0 8.10691 0.4942 6.22899C0.770871 5.20104 1.60125 4.37066 2.60943 4.09399C4.48753 3.59961 11.9998 3.59961 11.9998 3.59961C11.9998 3.59961 19.5122 3.59961 21.3903 4.11358ZM15.8549 12.0016L9.60788 15.5996V8.40355L15.8549 12.0016Z"
+									fill="white" />
+							</g>
+						</svg>
+					</a>
+					<a href="#" class="socials__element">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g opacity="0.6">
+								<path
+									d="M9.63262 15.1813L9.2687 20.7653C9.78938 20.7653 10.0149 20.5213 10.2853 20.2283L12.7264 17.6833L17.7847 21.7243C18.7124 22.2883 19.366 21.9913 19.6163 20.7933L22.9365 3.8214L22.9374 3.8204C23.2317 2.3244 22.4415 1.73941 21.5377 2.1064L2.02135 10.2574C0.689406 10.8214 0.709573 11.6314 1.79493 11.9984L6.78447 13.6913L18.3742 5.78039C18.9196 5.38639 19.4155 5.60439 19.0076 5.99839L9.63262 15.1813Z"
+									fill="white" />
+							</g>
+						</svg>
+					</a>
+					<a href="#" class="socials__element">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g opacity="0.6">
+								<path
+									d="M21.9804 7.88005C21.9336 6.81738 21.7617 6.0868 21.5156 5.45374C21.2616 4.78176 20.8709 4.18014 20.359 3.68002C19.8589 3.1721 19.2533 2.77743 18.5891 2.52745C17.9524 2.28127 17.2256 2.10943 16.163 2.06257C15.0923 2.01175 14.7525 2 12.0371 2C9.32172 2 8.98185 2.01175 7.9152 2.05861C6.85253 2.10546 6.12195 2.27746 5.48904 2.52348C4.81692 2.77743 4.2153 3.16814 3.71517 3.68002C3.20726 4.18014 2.81274 4.78573 2.5626 5.44992C2.31643 6.0868 2.14458 6.81341 2.09773 7.87609C2.04691 8.9467 2.03516 9.28658 2.03516 12.002C2.03516 14.7173 2.04691 15.0572 2.09376 16.1239C2.14061 17.1865 2.31261 17.9171 2.55879 18.5502C2.81274 19.2221 3.20726 19.8238 3.71517 20.3239C4.2153 20.8318 4.82088 21.2265 5.48507 21.4765C6.12195 21.7226 6.84856 21.8945 7.91139 21.9413C8.97788 21.9883 9.31791 21.9999 12.0333 21.9999C14.7486 21.9999 15.0885 21.9883 16.1552 21.9413C17.2178 21.8945 17.9484 21.7226 18.5813 21.4765C19.9254 20.9568 20.9881 19.8941 21.5078 18.5502C21.7538 17.9133 21.9258 17.1865 21.9726 16.1239C22.0195 15.0572 22.0312 14.7173 22.0312 12.002C22.0312 9.28658 22.0273 8.9467 21.9804 7.88005ZM20.1794 16.0457C20.1364 17.0225 19.9723 17.5499 19.8355 17.9015C19.4995 18.7728 18.808 19.4643 17.9367 19.8004C17.585 19.9372 17.0538 20.1012 16.0808 20.1441C15.026 20.1911 14.7096 20.2027 12.0411 20.2027C9.37255 20.2027 9.0522 20.1911 8.00113 20.1441C7.02437 20.1012 6.49693 19.9372 6.1453 19.8004C5.71171 19.6402 5.31704 19.3862 4.9967 19.0541C4.6646 18.7298 4.41065 18.3391 4.2504 17.9055C4.11365 17.5539 3.94959 17.0225 3.9067 16.0497C3.8597 14.9948 3.8481 14.6783 3.8481 12.0097C3.8481 9.34122 3.8597 9.02087 3.9067 7.96995C3.94959 6.99319 4.11365 6.46575 4.2504 6.11412C4.41065 5.68038 4.6646 5.28586 5.00067 4.96536C5.32483 4.63327 5.71553 4.37931 6.14927 4.21921C6.5009 4.08247 7.03231 3.9184 8.00509 3.87537C9.05999 3.82851 9.37652 3.81676 12.0449 3.81676C14.7174 3.81676 15.0337 3.82851 16.0848 3.87537C17.0616 3.9184 17.589 4.08247 17.9406 4.21921C18.3742 4.37931 18.7689 4.63327 19.0892 4.96536C19.4213 5.28967 19.6753 5.68038 19.8355 6.11412C19.9723 6.46575 20.1364 6.99701 20.1794 7.96995C20.2262 9.02484 20.238 9.34122 20.238 12.0097C20.238 14.6783 20.2262 14.9908 20.1794 16.0457Z"
+									fill="white" />
+								<path
+									d="M12.0371 6.86423C9.20069 6.86423 6.89937 9.1654 6.89937 12.002C6.89937 14.8385 9.20069 17.1397 12.0371 17.1397C14.8736 17.1397 17.1748 14.8385 17.1748 12.002C17.1748 9.1654 14.8736 6.86423 12.0371 6.86423ZM12.0371 15.3347C10.197 15.3347 8.70438 13.8422 8.70438 12.002C8.70438 10.1617 10.197 8.66924 12.0371 8.66924C13.8774 8.66924 15.3698 10.1617 15.3698 12.002C15.3698 13.8422 13.8774 15.3347 12.0371 15.3347Z"
+									fill="white" />
+								<path
+									d="M18.5776 6.6611C18.5776 7.32346 18.0405 7.86053 17.378 7.86053C16.7156 7.86053 16.1785 7.32346 16.1785 6.6611C16.1785 5.99858 16.7156 5.46167 17.378 5.46167C18.0405 5.46167 18.5776 5.99858 18.5776 6.6611Z"
+									fill="white" />
+							</g>
+						</svg>
+					</a>
+					<a href="#" class="socials__element">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g opacity="0.6">
+								<path
+									d="M21.995 22L22 21.9992V14.6642C22 11.0758 21.2275 8.31167 17.0325 8.31167C15.0158 8.31167 13.6625 9.41833 13.11 10.4675H13.0517V8.64667H9.07416V21.9992H13.2158V15.3875C13.2158 13.6467 13.5458 11.9633 15.7017 11.9633C17.8258 11.9633 17.8575 13.95 17.8575 15.4992V22H21.995Z"
+									fill="white" />
+								<path d="M2.32999 8.6475H6.47666V22H2.32999V8.6475Z" fill="white" />
+								<path
+									d="M4.40167 2C3.07583 2 2 3.07583 2 4.40167C2 5.7275 3.07583 6.82583 4.40167 6.82583C5.7275 6.82583 6.80333 5.7275 6.80333 4.40167C6.8025 3.07583 5.72667 2 4.40167 2Z"
+									fill="white" />
+							</g>
+						</svg>
+					</a>
+				</div>
+			</div>
+			<div class="footer__list footer__column">
+				<span class="footer__title">SITE map</span>
+				<ul class="footer__list">
+					<li class="footer__li"><a href='aboutUs.html' target='_blank' rel='noopener noreferrer'>About Us</a></li>
+					<li class="footer__li"><a href='courses.html' target='_blank' rel='noopener noreferrer'>Courses</a></li>
+					<li class="footer__li"><a href='events.html' target='_blank' rel='noopener noreferrer'>Events</a></li>
+					<li class="footer__li"><a href='blog.html' target='_blank' rel='noopener noreferrer'>Blog</a></li>
+					<li class="footer__li"><a href='contacts.html' target='_blank' rel='noopener noreferrer'>Contacts</a></li>
+				</ul>
+			</div>
+			<div class="footer__list footer__column">
+				<span class="footer__title">COURSES</span>
+				<ul class="footer__list">
+					<li class="footer__li"><a href='#' target='_blank' rel='noopener noreferrer'>Marketing</a></li>
+					<li class="footer__li"><a href='#' target='_blank' rel='noopener noreferrer'>Management</a></li>
+					<li class="footer__li"><a href='#' target='_blank' rel='noopener noreferrer'>HR & Recruting</a></li>
+					<li class="footer__li"><a href='#' target='_blank' rel='noopener noreferrer'>Design</a></li>
+					<li class="footer__li"><a href='#' target='_blank' rel='noopener noreferrer'>Development</a></li>
+				</ul>
+			</div>
+			<div class="footer__list footer__column">
+				<span class="footer__title">CONTACT US</span>
+				<ul class="footer__list">
+					<li class="footer__li"><a class="tel" href='tel:+40550128'>405 5-0128</a></li>
+					<li class="footer__li"><a class="mail" href='mailto:o@tex.com'>o@tex.com</a></li>
+				</ul>
+			</div>
+			<div class="footer__subscribe footer__column">
+				<span class="footer__title">SIGN UP TO our NEWSLETTER</span>
+				<form class='footer__form' action='#'>
+					<input class='footer__input' type='email' name='email' placeholder='Email address' required>
+					<button aria-label='submit yor email' type='submit'>
+						<svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd"
+								d="M7.86193 0.529247C8.12228 0.268897 8.54439 0.268897 8.80474 0.529247L11.8047 3.52925C12.0651 3.7896 12.0651 4.21171 11.8047 4.47206L8.80474 7.47206C8.54439 7.73241 8.12228 7.73241 7.86193 7.47206C7.60158 7.21171 7.60158 6.7896 7.86193 6.52925L9.72386 4.66732H0.666667C0.298477 4.66732 0 4.36884 0 4.00065C0 3.63246 0.298477 3.33398 0.666667 3.33398H9.72386L7.86193 1.47206C7.60158 1.21171 7.60158 0.789596 7.86193 0.529247Z"
+								fill="white" />
+						</svg>
+					</button>
+				</form>
+				<p class="footer__notify">
+					*Subscribe to our newsletter to receive communications and early updates from Createx SEO Agency.
+				</p>
+			</div>
+		</div>
+		<div class="footer__bottom">
+			<div class="footer__bottom-content container">
+				<div class="footer__bottom-left">
+					<span>Made in Russia, with ❤, by Ivan Ulyanov. </span>
+				</div>
+				<div class="footer__bottom-right">
+					<button data-scroll-to="header" class='to-top-btn' type='button'>GO TO TOP</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+	<section id="signUp" class='modal-window sign-modal'>
+	<div class="modal-window__body">
+		<div class="modal-window__content sign-modal__body">
+			<button type='button' class="sign-modal__closer modal-closer" aria-label="close this modal-window">
+				<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" clip-rule="evenodd"
+						d="M0.292893 0.292893C0.683417 -0.0976311 1.31658 -0.0976311 1.70711 0.292893L7.99999 6.58578L14.2929 0.292893C14.6834 -0.0976313 15.3166 -0.0976307 15.7071 0.292894C16.0976 0.683418 16.0976 1.31658 15.7071 1.70711L9.41421 7.99999L15.7071 14.2929C16.0976 14.6834 16.0976 15.3166 15.7071 15.7071C15.3166 16.0976 14.6834 16.0976 14.2929 15.7071L7.99999 9.41421L1.70711 15.7071C1.31658 16.0976 0.683418 16.0976 0.292894 15.7071C-0.0976307 15.3166 -0.0976313 14.6834 0.292893 14.2929L6.58578 7.99999L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683417 0.292893 0.292893Z"
+						fill="#787A80" />
+				</svg>
+			</button>
+
+			<span class="sign-modal__title">Sign up</span>
+			<p class="sign-modal__text text">Registration takes less than a minute but gives you full control over your studying.</p>
+
+			<form class='sign-modal__form' action='#'>
+				<fieldset>
+					<label class='label' for='name-signUp'>Full Name</label>
+					<input id="name-signUp" class='input' type='text' name='name-signUp' placeholder='Your full name' required>
+					<label class='label' for='email-signUp'>Email</label>
+					<input id="email-signUp" class='input' type='email' name='email-signUp' placeholder='Your working email' required>
+					<label class='label' for='password-signUp'>Password</label>
+					<input id="password-signUp" class='input' type='password' name='password-signUp' placeholder='Password' required>
+					<label class='label' for='confirmPassword-signUp'>Confirm Password</label>
+					<input id="confirmPassword-signUp" class='input' type='password' name='confirmPassword-signUp' placeholder='Confirm Password' required>
+
+					<label class="checkbox-wrapper label_row" for='remember-signUp'>
+						<input type='checkbox' id='remember-signUp' name='remember-signUp' />
+						<span>Remember me</span>
+					</label>
+				</fieldset>
+				<button class="button" aria-label='submit this form' type='submit'>Sign up</button>
+			</form>
+
+			<div class="sign-modal__another-window">
+				Already have an account? <button data-modal-link="signIn" class='sign-modal__btn-to-another-modal' type='button'>Sign in</button>
+			</div>
+
+			<div class="sign-modal__footer">
+				<span class="sign-modal__footer-text text">Or sign in with</span>
+				<div class="sign-modal__socials">
+					<button class='sign-modal__social' aria-label='by Facebook' type='button'>
+						<svg width="10" height="20" viewBox="0 0 10 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M9.63537 0.836822L7.32099 0.833008C4.72086 0.833008 3.04054 2.60392 3.04054 5.34487V7.42513H0.713524C0.512443 7.42513 0.349609 7.59259 0.349609 7.79915V10.8132C0.349609 11.0198 0.512628 11.187 0.713524 11.187H3.04054V18.7925C3.04054 18.9991 3.20337 19.1663 3.40445 19.1663H6.44054C6.64162 19.1663 6.80445 18.9989 6.80445 18.7925V11.187H9.52527C9.72635 11.187 9.88919 11.0198 9.88919 10.8132L9.8903 7.79915C9.8903 7.69997 9.85187 7.60499 9.78373 7.5348C9.71558 7.46461 9.62275 7.42513 9.5262 7.42513H6.80445V5.66166C6.80445 4.81407 7.00108 4.38379 8.07593 4.38379L9.635 4.38322C9.8359 4.38322 9.99873 4.21576 9.99873 4.00939V1.21065C9.99873 1.00447 9.83608 0.837204 9.63537 0.836822Z"
+								fill="#787A80" />
+						</svg>
+					</button>
+					<button class='sign-modal__social' aria-label='by Google' type='button'>
+						<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M9.17561 7.7522H17.4051C17.4959 8.25921 17.5413 8.74352 17.5413 9.20513C17.5413 10.8472 17.197 12.3134 16.5084 13.6037C15.8198 14.8939 14.8379 15.9023 13.5628 16.6287C12.2877 17.3552 10.8253 17.7184 9.17561 17.7184C7.98754 17.7184 6.85622 17.4895 5.78165 17.0317C4.70708 16.5739 3.78008 15.9552 3.00064 15.1758C2.2212 14.3963 1.60257 13.4693 1.14475 12.3948C0.686921 11.3202 0.458008 10.1889 0.458008 9.00081C0.458008 7.81273 0.686921 6.68141 1.14475 5.60685C1.60257 4.53228 2.2212 3.60528 3.00064 2.82584C3.78008 2.0464 4.70708 1.42777 5.78165 0.969942C6.85622 0.512116 7.98754 0.283203 9.17561 0.283203C11.4458 0.283203 13.3944 1.04372 15.0214 2.56476L12.649 4.84633C11.7183 3.94581 10.5604 3.49555 9.17561 3.49555C8.19942 3.49555 7.29702 3.74149 6.46839 4.23337C5.63976 4.72525 4.98329 5.39307 4.49898 6.23683C4.01467 7.08059 3.77251 8.00192 3.77251 9.00081C3.77251 9.9997 4.01467 10.921 4.49898 11.7648C4.98329 12.6086 5.63976 13.2764 6.46839 13.7683C7.29702 14.2601 8.19942 14.5061 9.17561 14.5061C9.83398 14.5061 10.4394 14.4153 10.9918 14.2336C11.5442 14.052 11.9982 13.825 12.3539 13.5526C12.7096 13.2802 13.0198 12.9699 13.2847 12.6218C13.5496 12.2737 13.7444 11.9445 13.8693 11.6343C13.9941 11.324 14.0793 11.0289 14.1247 10.7489H9.17561V7.7522Z"
+								fill="#787A80" />
+						</svg>
+					</button>
+					<button class='sign-modal__social' aria-label='by Twitter' type='button'>
+						<svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M17.75 1.8106C17.1059 2.08388 16.4148 2.26922 15.6887 2.35196C16.4301 1.92683 16.9976 1.25252 17.2666 0.451489C16.5711 0.845186 15.8035 1.13106 14.9855 1.28603C14.3305 0.616946 13.3988 0.200195 12.3653 0.200195C10.3827 0.200195 8.77523 1.73942 8.77523 3.63674C8.77523 3.90583 8.80694 4.16865 8.86819 4.41997C5.88501 4.2765 3.23973 2.90797 1.46928 0.828429C1.1598 1.33523 0.983743 1.92576 0.983743 2.55613C0.983743 3.74878 1.618 4.8011 2.58033 5.41677C1.992 5.39793 1.43866 5.24296 0.954233 4.98537V5.0283C0.954233 6.69317 2.19213 8.08265 3.83353 8.39888C3.5328 8.47637 3.21568 8.5193 2.88761 8.5193C2.6558 8.5193 2.43161 8.49732 2.2118 8.45542C2.66889 9.82188 3.99429 10.8156 5.56463 10.8428C4.33657 11.7642 2.7881 12.3119 1.10624 12.3119C0.816463 12.3119 0.53103 12.2951 0.25 12.2647C1.83893 13.2417 3.7253 13.8113 5.75273 13.8113C12.3566 13.8113 15.9665 8.57376 15.9665 4.0315L15.9544 3.5865C16.6597 3.1048 17.2699 2.49959 17.75 1.8106Z"
+								fill="#787A80" />
+						</svg>
+					</button>
+					<button class='sign-modal__social' aria-label='by LinkedIn' type='button'>
+						<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M17.3295 17.3337L17.3337 17.333V11.2205C17.3337 8.23019 16.6899 5.92671 13.1941 5.92671C11.5135 5.92671 10.3857 6.84894 9.92532 7.72324H9.87671V6.20588H6.56212V17.333H10.0135V11.8232C10.0135 10.3726 10.2885 8.96977 12.085 8.96977C13.8552 8.96977 13.8816 10.6253 13.8816 11.9163V17.3337H17.3295Z"
+								fill="#787A80" />
+							<path d="M0.941988 6.20657H4.39754V17.3337H0.941988V6.20657Z" fill="#787A80" />
+							<path
+								d="M2.66838 0.666992C1.56352 0.666992 0.666992 1.56352 0.666992 2.66838C0.666992 3.77324 1.56352 4.68852 2.66838 4.68852C3.77324 4.68852 4.66977 3.77324 4.66977 2.66838C4.66908 1.56352 3.77255 0.666992 2.66838 0.666992Z"
+								fill="#787A80" />
+						</svg>
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="signIn" class='modal-window sign-modal'>
+	<div class="modal-window__body">
+		<div class="modal-window__content sign-modal__body">
+			<button type='button' class="sign-modal__closer modal-closer" aria-label="close this modal-window">
+				<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" clip-rule="evenodd"
+						d="M0.292893 0.292893C0.683417 -0.0976311 1.31658 -0.0976311 1.70711 0.292893L7.99999 6.58578L14.2929 0.292893C14.6834 -0.0976313 15.3166 -0.0976307 15.7071 0.292894C16.0976 0.683418 16.0976 1.31658 15.7071 1.70711L9.41421 7.99999L15.7071 14.2929C16.0976 14.6834 16.0976 15.3166 15.7071 15.7071C15.3166 16.0976 14.6834 16.0976 14.2929 15.7071L7.99999 9.41421L1.70711 15.7071C1.31658 16.0976 0.683418 16.0976 0.292894 15.7071C-0.0976307 15.3166 -0.0976313 14.6834 0.292893 14.2929L6.58578 7.99999L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683417 0.292893 0.292893Z"
+						fill="#787A80" />
+				</svg>
+			</button>
+
+			<span class="sign-modal__title">Sign in</span>
+			<p class="sign-modal__text text">Sign in to your account using email and password provided during registration.</p>
+
+			<form class='sign-modal__form' action='#'>
+				<fieldset>
+					<label class='label' for='email-signIn'>Email</label>
+					<input id="email-signIn" class='input' type='email' name='email-signIn' placeholder='Your working email' required>
+					<label class='label' for='password-signIn'>Password</label>
+					<input id="password-signIn" class='input' type='password' name='password-signIn' placeholder='Password' required>
+
+					<label class="checkbox-wrapper label_row" for='keepMe-signIn'>
+						<input type='checkbox' id='keepMe-signIn' name='keepMe-signIn' />
+						<span>Keep me signed in</span>
+
+						<a class="sign-modal__btn-to-another-modal sign-modal__foggot-ref" href='#' target='_blank' rel='noopener noreferrer'>Forgot password?</a>
+					</label>
+				</fieldset>
+				<button class="button" aria-label='submit this form' type='submit'>Sign in</button>
+			</form>
+
+			<div class="sign-modal__another-window">
+				Don't have an account? <button data-modal-link="signUp" class='sign-modal__btn-to-another-modal' type='button'>Sign up</button>
+			</div>
+			
+			<div class="sign-modal__footer">
+				<span class="sign-modal__footer-text text">Or sign in with</span>
+				<div class="sign-modal__socials">
+					<button class='sign-modal__social' aria-label='by Facebook' type='button'>
+						<svg width="10" height="20" viewBox="0 0 10 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M9.63537 0.836822L7.32099 0.833008C4.72086 0.833008 3.04054 2.60392 3.04054 5.34487V7.42513H0.713524C0.512443 7.42513 0.349609 7.59259 0.349609 7.79915V10.8132C0.349609 11.0198 0.512628 11.187 0.713524 11.187H3.04054V18.7925C3.04054 18.9991 3.20337 19.1663 3.40445 19.1663H6.44054C6.64162 19.1663 6.80445 18.9989 6.80445 18.7925V11.187H9.52527C9.72635 11.187 9.88919 11.0198 9.88919 10.8132L9.8903 7.79915C9.8903 7.69997 9.85187 7.60499 9.78373 7.5348C9.71558 7.46461 9.62275 7.42513 9.5262 7.42513H6.80445V5.66166C6.80445 4.81407 7.00108 4.38379 8.07593 4.38379L9.635 4.38322C9.8359 4.38322 9.99873 4.21576 9.99873 4.00939V1.21065C9.99873 1.00447 9.83608 0.837204 9.63537 0.836822Z"
+								fill="#787A80" />
+						</svg>
+					</button>
+					<button class='sign-modal__social' aria-label='by Google' type='button'>
+						<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M9.17561 7.7522H17.4051C17.4959 8.25921 17.5413 8.74352 17.5413 9.20513C17.5413 10.8472 17.197 12.3134 16.5084 13.6037C15.8198 14.8939 14.8379 15.9023 13.5628 16.6287C12.2877 17.3552 10.8253 17.7184 9.17561 17.7184C7.98754 17.7184 6.85622 17.4895 5.78165 17.0317C4.70708 16.5739 3.78008 15.9552 3.00064 15.1758C2.2212 14.3963 1.60257 13.4693 1.14475 12.3948C0.686921 11.3202 0.458008 10.1889 0.458008 9.00081C0.458008 7.81273 0.686921 6.68141 1.14475 5.60685C1.60257 4.53228 2.2212 3.60528 3.00064 2.82584C3.78008 2.0464 4.70708 1.42777 5.78165 0.969942C6.85622 0.512116 7.98754 0.283203 9.17561 0.283203C11.4458 0.283203 13.3944 1.04372 15.0214 2.56476L12.649 4.84633C11.7183 3.94581 10.5604 3.49555 9.17561 3.49555C8.19942 3.49555 7.29702 3.74149 6.46839 4.23337C5.63976 4.72525 4.98329 5.39307 4.49898 6.23683C4.01467 7.08059 3.77251 8.00192 3.77251 9.00081C3.77251 9.9997 4.01467 10.921 4.49898 11.7648C4.98329 12.6086 5.63976 13.2764 6.46839 13.7683C7.29702 14.2601 8.19942 14.5061 9.17561 14.5061C9.83398 14.5061 10.4394 14.4153 10.9918 14.2336C11.5442 14.052 11.9982 13.825 12.3539 13.5526C12.7096 13.2802 13.0198 12.9699 13.2847 12.6218C13.5496 12.2737 13.7444 11.9445 13.8693 11.6343C13.9941 11.324 14.0793 11.0289 14.1247 10.7489H9.17561V7.7522Z"
+								fill="#787A80" />
+						</svg>
+					</button>
+					<button class='sign-modal__social' aria-label='by Twitter' type='button'>
+						<svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M17.75 1.8106C17.1059 2.08388 16.4148 2.26922 15.6887 2.35196C16.4301 1.92683 16.9976 1.25252 17.2666 0.451489C16.5711 0.845186 15.8035 1.13106 14.9855 1.28603C14.3305 0.616946 13.3988 0.200195 12.3653 0.200195C10.3827 0.200195 8.77523 1.73942 8.77523 3.63674C8.77523 3.90583 8.80694 4.16865 8.86819 4.41997C5.88501 4.2765 3.23973 2.90797 1.46928 0.828429C1.1598 1.33523 0.983743 1.92576 0.983743 2.55613C0.983743 3.74878 1.618 4.8011 2.58033 5.41677C1.992 5.39793 1.43866 5.24296 0.954233 4.98537V5.0283C0.954233 6.69317 2.19213 8.08265 3.83353 8.39888C3.5328 8.47637 3.21568 8.5193 2.88761 8.5193C2.6558 8.5193 2.43161 8.49732 2.2118 8.45542C2.66889 9.82188 3.99429 10.8156 5.56463 10.8428C4.33657 11.7642 2.7881 12.3119 1.10624 12.3119C0.816463 12.3119 0.53103 12.2951 0.25 12.2647C1.83893 13.2417 3.7253 13.8113 5.75273 13.8113C12.3566 13.8113 15.9665 8.57376 15.9665 4.0315L15.9544 3.5865C16.6597 3.1048 17.2699 2.49959 17.75 1.8106Z"
+								fill="#787A80" />
+						</svg>
+					</button>
+					<button class='sign-modal__social' aria-label='by LinkedIn' type='button'>
+						<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M17.3295 17.3337L17.3337 17.333V11.2205C17.3337 8.23019 16.6899 5.92671 13.1941 5.92671C11.5135 5.92671 10.3857 6.84894 9.92532 7.72324H9.87671V6.20588H6.56212V17.333H10.0135V11.8232C10.0135 10.3726 10.2885 8.96977 12.085 8.96977C13.8552 8.96977 13.8816 10.6253 13.8816 11.9163V17.3337H17.3295Z"
+								fill="#787A80" />
+							<path d="M0.941988 6.20657H4.39754V17.3337H0.941988V6.20657Z" fill="#787A80" />
+							<path
+								d="M2.66838 0.666992C1.56352 0.666992 0.666992 1.56352 0.666992 2.66838C0.666992 3.77324 1.56352 4.68852 2.66838 4.68852C3.77324 4.68852 4.66977 3.77324 4.66977 2.66838C4.66908 1.56352 3.77255 0.666992 2.66838 0.666992Z"
+								fill="#787A80" />
+						</svg>
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="video" class='modal-window'>
+	<div class="modal-window__body">
+		<div class="modal-window__content">
+			<video class="modal-window__video" poster='video/poster.jpg' controls>
+				<source src='video/Red-yellow-days.webm' type='video/webm'>
+				<source src='video/Red-yellow-days.mp4' type='video/mp4'>
+			</video>
+		</div>
+	</div>
+</section>
+
+
+
+</body>
+
+
+<script type="module" src="scripts/spoilers.js"></script>
+<script type="module" src="scripts/generalScripts.js"></script>
+
+
+<!-- Swiper -->
+<link rel="stylesheet" href="css/swiper-bundle.min.css">
+<script defer src="scripts/swiper-bundle.min.js"></script>
+<script type="module" src="scripts/sliders.js"></script>
+
+
+</html>
+
+<!-- 
+  Made in Russia, with ❤, by Ivan Ulyanov. 
+-->

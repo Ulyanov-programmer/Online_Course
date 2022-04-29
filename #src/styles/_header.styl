@@ -1,0 +1,112 @@
+.header {
+	position absolute;
+	width 100%;
+	flex-set row nowrap;
+	justify-content center;
+	z-index 5;
+
+	&__body {
+		flex-set row nowrap;
+		justify-content space-between;
+		align-items center;
+		padding 10px 0 10px 0;
+	}
+
+	&__left-container {
+		display flex;
+		align-items center;
+		padding-right 10px;
+
+		@media (min-width 650px) {
+			firstLevelElementsMargin 'right' 40;
+		}
+	}
+
+	.logo {
+		@media (max-width 450px) {
+			img {
+				width 75px;
+			}
+		}
+	}
+}
+
+.navmenu {
+	@media (max-width $burgerMenuShowWidth) {
+		display none;
+	}
+
+	&__body {
+	}
+
+	&__list {
+		flex-set row wrap;
+
+		li {
+			:not(:last-child) {
+				margin-right 10px;
+			}
+
+			a, button {
+				display inline-block;
+				padding 12px;
+				font-weight 700;
+				color #424551;
+				transition all .2s ease 0s;
+
+				&.active, &:hover, &:focus {
+					color #FF3F3A;
+				}
+			}
+		}
+	}
+}
+
+.fixed-header {
+	position fixed;
+	top 0;
+	left 0;
+	width 100%;
+}
+
+.logo {
+	z-index 10;
+}
+
+.actions {
+	&__body {
+		flex-set row nowrap;
+		firstLevelElementsMargin 'right' 35;
+
+		@media (max-width 600px) {
+			firstLevelElementsMargin 'right' 15;
+
+			.button {
+				padding 15px;
+			}
+		}
+
+		@media (max-width 426px) {
+			.button {
+				padding 8px;
+			}
+		}
+	}
+}
+
+.logn-registr {
+	flex-set row nowrap;
+	justify-content center;
+	align-items center;
+	font-weight 700;
+
+	&:before {
+		display inline-block;
+		padding-right 5px;
+		content url('../img/decor/human.svg');
+
+		@media (max-width 525px) {
+			display none;
+		}
+	}
+}

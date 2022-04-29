@@ -1,0 +1,49 @@
+<header class="header">
+	<div class="header__body container">
+		<div class="header__left-container">
+			<a href="index.html" class="logo contain-image" aria-label="logo, reference to main page">
+				<img src="img/logo.svg" alt="logo" width=130 height=22>
+			</a>
+
+			<nav class="navmenu">
+				<div class="navmenu__body">
+					<ul class='navmenu__list'>
+						<li>
+							<a class="@@if(activePage==1) {active}" target="_self" rel="noopener" href="aboutUs.html">About Us</a>
+							<a class="@@if(activePage==2) {active}" target="_self" rel="noopener" href="courses.html">Courses</a>
+							<a class="@@if(activePage==3) {active}" target="_self" rel="noopener" href="events.html">Events</a>
+							<a class="@@if(activePage==4) {active}" target="_self" rel="noopener" href="blog.html">Blog</a>
+							<a class="@@if(activePage==5) {active}" target="_self" rel="noopener" href="contacts.html">Contacts</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+
+		<div class="actions">
+			<div class="actions__body">
+				<button class='button' aria-label='' type='button'>Get consultation</button>
+				<button data-modal-link="signUp" class='logn-registr' aria-label='open log0in or registration modal' type='button'>Log in / Register</button>
+			</div>
+		</div>
+
+		<button aria-label="burger-menu" type="button" id="burgerButton" class="header__burger burger-btn">
+			<svg class="burger-btn__svg" width="30" height="30" viewBox="0 0 150 100" xmlns="http://www.w3.org/2000/svg">
+				<rect class="burger-btn__rect-top" width="100%" height="10%" x="0" y="0%" fill="#424551" />
+				<rect class="burger-btn__rect-center" width="100%" height="10%" x="0" y="45%" fill="#424551" />
+				<rect class="burger-btn__rect-bottom" width="100%" height="10%" x="0" y="90%" fill="#424551" />
+			</svg>
+		</button>
+		<nav class="fullscreen-navmenu">
+			<div class="fullscreen-navmenu__body">
+				<ul>
+					<li class="fs-element"><a target="_self" rel="noopener" href="aboutUs.html">About Us</a></li>
+					<li class="fs-element"><a target="_self" rel="noopener" href="courses.html">Courses</a></li>
+					<li class="fs-element"><a target="_self" rel="noopener" href="events.html">Events</a></li>
+					<li class="fs-element"><a target="_self" rel="noopener" href="blog.html">Blog</a></li>
+					<li class="fs-element"><a target="_self" rel="noopener" href="contacts.html">Contacts</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+</header>
