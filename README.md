@@ -22,7 +22,3 @@ This project was created solely for the purpose of demonstrating my skills, but 
 </details>
 <br>
 <br>
-
-You can see this [this on GitHub Pages].<br>
-
-[this on GitHub Pages]: https://ulyanov-programmer.github.io/Online_Course/Online_Course/
